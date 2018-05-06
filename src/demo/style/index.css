@@ -1,0 +1,14 @@
+.demo-index-item{
+    display: inline-block;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 16px;
+    background-color: #f5f5f5;
+}
+
+.demo-index-item:nth-child(2){
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
