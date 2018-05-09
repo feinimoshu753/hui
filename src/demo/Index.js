@@ -15,6 +15,7 @@ export default class ButtonPage extends Component {
     render() {
         return (
             <div>
+                <Item title="navigation_bar" link="/navigation_bar"/>
                 <Item title="button" link="/button"/>
                 <Item title="loading" link="/loading"/>
                 <Item title="toast" link="/toast"/>

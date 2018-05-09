@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Button from '../component/button';
+import NavigationBar from '../component/navigation_bar';
 import './style/button.css'
 
 export default class ButtonPage extends Component {
@@ -7,6 +8,7 @@ export default class ButtonPage extends Component {
     render() {
         return (
             <div className="button-demo">
+                <NavigationBar title="button" fixed={true}/>
                 <div className="group">
                     <h3>小号按钮</h3>
                     <Button type="default" size="small">default</Button>
