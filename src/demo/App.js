@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import '../style/App.css';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import Index from '../demo/Index'
 import Button from '../demo/Button'
 import Loading from '../demo/Loading'
