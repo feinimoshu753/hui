@@ -8,7 +8,7 @@ export default class ButtonPage extends Component {
     render() {
         return (
             <div className="button-demo">
-                <NavigationBar title="button" fixed={true}/>
+                <NavigationBar title="button" leftIcon={require('./img/icon_back.png')} fixed={true} onLeftClick={()=>{window.history.back()}}/>
                 <div className="group">
                     <h3>小号按钮</h3>
                     <Button type="default" size="small">default</Button>
