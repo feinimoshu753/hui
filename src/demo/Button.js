@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Button from '../component/button';
 import NavigationBar from '../component/navigation_bar';
-import './style/button.css'
+import './style/button.less'
 
 export default class ButtonPage extends Component {
 

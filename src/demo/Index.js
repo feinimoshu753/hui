@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './style/index.css'
+import './style/index.less'
 import {Link} from "react-router-dom";
 
 const Item = (props) => (
