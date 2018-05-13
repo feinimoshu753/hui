@@ -1,7 +1,26 @@
-import React, {Component} from 'react'
-import './index.less'
+import React, {Component} from 'react';
+import PropTypes from 'prop-types';
+import './index.less';
 
 export default class Button extends Component {
+
+    static propTypes = {
+        size: PropTypes.string,
+        borderType: PropTypes.bool,
+        type: PropTypes.string,
+        disabled: PropTypes.bool,
+        circle: PropTypes.bool,
+        onClick: PropTypes.func
+    };
+
+    static defaultProps = {
+        size: 'normal',
+        borderType: false,
+        type: 'default',
+        disabled: false,
+        circle: false,
+        onClick: function () {}
+    };
 
     render() {
         let buttonClass = 'hui-button';
@@ -12,7 +31,7 @@ export default class Button extends Component {
         buttonClass += buttonSizeClass + buttonTypeClass + buttonDisabled + buttonCircle;
 
         return (
-            <button className={buttonClass}>{this.props.children}</button>
+            <button className={buttonClass} onClick={(e)=>{this.props.onClick(e)}}>{this.props.children}</button>
         );
     }
 }
