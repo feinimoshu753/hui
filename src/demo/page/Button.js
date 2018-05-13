@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
-import Button from '../component/button';
-import NavigationBar from '../component/navigation_bar';
-import './style/button.less'
+import Button from '../../component/button/index';
+import DemoNavigationBar from '../component/DemoNavigationBar';
+import '../style/button.less'
 
 export default class ButtonPage extends Component {
 
     render() {
         return (
             <div className="button-demo">
-                <NavigationBar title="button" leftIcon={require('./img/icon_back.png')} fixed={true} onLeftClick={()=>{window.history.back()}}/>
+                <DemoNavigationBar title="Button"/>
                 <div className="group">
                     <h3>小号按钮</h3>
                     <Button type="default" size="small">default</Button>

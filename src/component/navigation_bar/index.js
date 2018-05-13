@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 export default class NavigationBar extends Component {
 
     static propTypes = {
-        fixed: PropTypes.bool,
+        fixedTop: PropTypes.bool,
         styles: PropTypes.object,
         leftIcon: PropTypes.string,
         leftText: PropTypes.string,
@@ -18,15 +18,15 @@ export default class NavigationBar extends Component {
     };
 
     static defaultProps = {
-        fixed: false,
+        fixedTop: false,
         onLeftClick: function () {},
         onRightClick: function () {}
     };
 
     render() {
         let navigationBarClass = 'hui-navigation-bar';
-        if (this.props.fixed) {
-            navigationBarClass += ' hui-navigation-bar-fixed'
+        if (this.props.fixedTop) {
+            navigationBarClass += ' hui-navigation-bar-fixed-top'
         }
 
         return (

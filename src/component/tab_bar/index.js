@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import './index.less'
 
-export default class Toast extends Component {
+export default class TabBar extends Component {
 
     render() {
         return (
-            <div className="hui-toast">
-                toast
+            <div className="hui-tab-bar">
+                tabBar
             </div>
         );
     }

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Toast from '../component/toast';
+import Toast from '../../component/toast/index';
 
 export default class ToastPage extends Component {
 
